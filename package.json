@@ -1,0 +1,35 @@
+{
+  "name": "numgen",
+  "version": "0.0.1",
+  "description": "Creates objects that generate number sequences",
+  "main": "numgen.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gamtiq/numgen.git"
+  },
+  "keywords": [
+    "number",
+    "sequence",
+    "generator"
+  ],
+  "author": "Denis Sikuler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gamtiq/numgen/issues"
+  },
+  "homepage": "https://github.com/gamtiq/numgen",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-jsdoc": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-umd": "~1.3.0",
+    "grunt-mocha-cli": "~1.3.0"
+  }
+}

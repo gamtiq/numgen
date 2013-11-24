@@ -2,7 +2,7 @@
     "name": "numgen",
     "repo": "gamtiq/numgen",
     "description": "Creates objects that generate number sequences",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "keywords": [
         "number",
         "sequence",

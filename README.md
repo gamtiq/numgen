@@ -14,6 +14,14 @@ Creates objects that generate number sequences.
 
     component install gamtiq/numgen
 
+### [Jam](http://jamjs.org)
+
+    jam install numgen
+
+### [Bower](http://bower.io)
+
+    bower install numgen
+
 ### AMD, &lt;script&gt;
 
 Use `dist/numgen.js` or `dist/numgen.min.js` (minified version).
@@ -26,6 +34,14 @@ Use `dist/numgen.js` or `dist/numgen.min.js` (minified version).
 var NumGen = require("numgen");
 ```
 
+### Jam
+
+```js
+require(["numgen"], function(NumGen) {
+    ...
+});
+```
+
 ### AMD
 
 ```js
@@ -34,9 +50,10 @@ define(["path/to/dist/numgen.js"], function(NumGen) {
 });
 ```
 
-### &lt;script&gt;
+### Bower, &lt;script&gt;
 
 ```html
+<!-- Use bower_components/numgen/dist/numgen.js if the library was installed by Bower -->
 <script type="text/javascript" src="path/to/dist/numgen.js"></script>
 <script type="text/javascript">
     // numgen is available via NumGen field of window object

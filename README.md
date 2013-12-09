@@ -77,6 +77,8 @@ for (var nI = 1; nI < 11; nI++) {
 }
 ```
 
+See `test/numgen.js` for additional examples.
+
 ## API
 
 See `doc` folder.

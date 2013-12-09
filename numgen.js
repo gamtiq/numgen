@@ -102,7 +102,6 @@ function NumberGenerator(initValue) {
  *  
  * @protected
  * @type {Number}
- * @author Denis Sikuler
  */
 NumberGenerator.prototype._factor = 1;
 
@@ -112,7 +111,6 @@ NumberGenerator.prototype._factor = 1;
  * @return {Number}
  *      Constant factor that is used to calculate numbers of sequence.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_factor _factor}
  */
 NumberGenerator.prototype.getFactor = function() {
@@ -127,7 +125,6 @@ NumberGenerator.prototype.getFactor = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_factor _factor}
  */
 NumberGenerator.prototype.setFactor = function(nFactor) {
@@ -140,7 +137,6 @@ NumberGenerator.prototype.setFactor = function(nFactor) {
  *  
  * @protected
  * @type {Number}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueChange _valueChange}
  */
 NumberGenerator.prototype._value = 0;
@@ -151,7 +147,6 @@ NumberGenerator.prototype._value = 0;
  * @return {Number}
  *      Current variable value.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_value _value}
  */
 NumberGenerator.prototype.getValue = function() {
@@ -163,7 +158,6 @@ NumberGenerator.prototype.getValue = function() {
  *  
  * @protected
  * @type {Number}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_value _value}
  */
 NumberGenerator.prototype._startValue = 0;
@@ -174,7 +168,6 @@ NumberGenerator.prototype._startValue = 0;
  * @return {Number}
  *      Initial value of variable.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_startValue _startValue}
  */
 NumberGenerator.prototype.getStartValue = function() {
@@ -189,7 +182,6 @@ NumberGenerator.prototype.getStartValue = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_startValue _startValue}
  */
 NumberGenerator.prototype.setStartValue = function(nValue) {
@@ -202,7 +194,6 @@ NumberGenerator.prototype.setStartValue = function(nValue) {
  *  
  * @protected
  * @type {Number}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_value _value}
  */
 NumberGenerator.prototype._maxValue = Number.MAX_VALUE;
@@ -213,7 +204,6 @@ NumberGenerator.prototype._maxValue = Number.MAX_VALUE;
  * @return {Number}
  *      Maximal value of variable.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_maxValue _maxValue}
  */
 NumberGenerator.prototype.getMaxValue = function() {
@@ -228,7 +218,6 @@ NumberGenerator.prototype.getMaxValue = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_maxValue _maxValue}
  */
 NumberGenerator.prototype.setMaxValue = function(nValue) {
@@ -241,7 +230,6 @@ NumberGenerator.prototype.setMaxValue = function(nValue) {
  *  
  * @protected
  * @type {Boolean}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_maxValue _maxValue}
  * @see {@link module:numgen~NumberGenerator#_value _value}
  */
@@ -253,7 +241,6 @@ NumberGenerator.prototype._resetValueOnMax = false;
  * @return {Boolean}
  *      <code>true</code>, if variable value will be reset, otherwise <code>false</code>.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_resetValueOnMax _resetValueOnMax}
  */
 NumberGenerator.prototype.isResetValueOnMax = function() {
@@ -268,7 +255,6 @@ NumberGenerator.prototype.isResetValueOnMax = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_resetValueOnMax _resetValueOnMax}
  */
 NumberGenerator.prototype.setResetValueOnMax = function(bReset) {
@@ -350,7 +336,6 @@ NumberGenerator.prototype.setResetValueOnMax = function(bReset) {
  *  
  * @protected
  * @type {Number | Function | Object | null | undefined}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_state _state}
  * @see {@link module:numgen~NumberGenerator#_passToChanger _passToChanger}
  * @see {@link module:numgen~NumberGenerator#_value _value}
@@ -364,7 +349,6 @@ NumberGenerator.prototype._valueChange = 1;
  * @return {Number | Function | Object | null | undefined}
  *      Value that specifies the way to calculate new value of variable.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueChange _valueChange}
  */
 NumberGenerator.prototype.getValueChange = function() {
@@ -379,7 +363,6 @@ NumberGenerator.prototype.getValueChange = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueChange _valueChange}
  */
 NumberGenerator.prototype.setValueChange = function(change) {
@@ -392,7 +375,6 @@ NumberGenerator.prototype.setValueChange = function(change) {
  * 
  * @protected
  * @type {Boolean}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_value _value}
  * @see {@link module:numgen~NumberGenerator#_valueChange _valueChange}
  * @see {@link module:numgen~NumberGenerator#getNext getNext}
@@ -405,7 +387,6 @@ NumberGenerator.prototype._passToChanger = false;
  * @return {Boolean}
  *      <code>true</code>, if reference to this object should be passed into function, otherwise <code>false</code>.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_passToChanger _passToChanger}
  */
 NumberGenerator.prototype.isPassToChanger = function() {
@@ -420,7 +401,6 @@ NumberGenerator.prototype.isPassToChanger = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_passToChanger _passToChanger}
  */
 NumberGenerator.prototype.setPassToChanger = function(bPass) {
@@ -434,7 +414,6 @@ NumberGenerator.prototype.setPassToChanger = function(bPass) {
  * 
  * @protected
  * @type {Integer}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_lastNumberTime _lastNumberTime}
  * @see {@link module:numgen~NumberGenerator#_value _value}
  */
@@ -446,7 +425,6 @@ NumberGenerator.prototype._valueChangePeriod = -1;
  * @return {Integer}
  *      Time interval in milliseconds during which it is possible to calculate new value of variable.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueChangePeriod _valueChangePeriod}
  */
 NumberGenerator.prototype.getValueChangePeriod = function() {
@@ -461,7 +439,6 @@ NumberGenerator.prototype.getValueChangePeriod = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueChangePeriod _valueChangePeriod}
  */
 NumberGenerator.prototype.setValueChangePeriod = function(nPeriod) {
@@ -476,7 +453,6 @@ NumberGenerator.prototype.setValueChangePeriod = function(nPeriod) {
  * 
  * @protected
  * @type {Integer}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_lastNumberTime _lastNumberTime}
  * @see {@link module:numgen~NumberGenerator#_value _value}
  */
@@ -488,7 +464,6 @@ NumberGenerator.prototype._valueSavePeriod = -1;
  * @return {Integer}
  *      Time interval in milliseconds during which it is possible to change or preserve value of variable.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueSavePeriod _valueSavePeriod}
  */
 NumberGenerator.prototype.getValueSavePeriod = function() {
@@ -503,7 +478,6 @@ NumberGenerator.prototype.getValueSavePeriod = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueSavePeriod _valueSavePeriod}
  */
 NumberGenerator.prototype.setValueSavePeriod = function(nPeriod) {
@@ -516,7 +490,6 @@ NumberGenerator.prototype.setValueSavePeriod = function(nPeriod) {
  * 
  * @protected
  * @type {Integer}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#getNext getNext}
  */
 NumberGenerator.prototype._index = 0;
@@ -527,7 +500,6 @@ NumberGenerator.prototype._index = 0;
  * @return {Integer}
  *      The index of the current item of sequence.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_index _index}
  */
 NumberGenerator.prototype.getIndex = function() {
@@ -539,7 +511,6 @@ NumberGenerator.prototype.getIndex = function() {
  * 
  * @protected
  * @type {Number}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#getNext getNext}
  */
 NumberGenerator.prototype._prev = void 0;
@@ -550,7 +521,6 @@ NumberGenerator.prototype._prev = void 0;
  * @return {Number}
  *      The previous item of sequence.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_prev _prev}
  */
 NumberGenerator.prototype.getPrev = function() {
@@ -562,7 +532,6 @@ NumberGenerator.prototype.getPrev = function() {
  * 
  * @protected
  * @type {Number}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#getNext getNext}
  */
 NumberGenerator.prototype._current = 0;
@@ -573,7 +542,6 @@ NumberGenerator.prototype._current = 0;
  * @return {Number}
  *      The current item of sequence (the last requested item by {@link module:numgen~NumberGenerator#getNext getNext}).
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_current _current}
  */
 NumberGenerator.prototype.getCurrent = function() {
@@ -585,7 +553,6 @@ NumberGenerator.prototype.getCurrent = function() {
  * 
  * @protected
  * @type {Integer}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#getNext getNext}
  */
 NumberGenerator.prototype._lastNumberTime = 0;
@@ -596,7 +563,6 @@ NumberGenerator.prototype._lastNumberTime = 0;
  *  
  * @protected
  * @type {Object}
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_valueChange _valueChange}
  * @see {@link module:numgen~NumberGenerator#getNext getNext}
  */
@@ -608,11 +574,11 @@ NumberGenerator.prototype._state = null;
  * @return {Number}
  *      Next item of sequence.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_current _current}
  * @see {@link module:numgen~NumberGenerator#_index _index}
  * @see {@link module:numgen~NumberGenerator#_lastNumberTime _lastNumberTime}
  * @see {@link module:numgen~NumberGenerator#_prev _prev}
+ * @see {@link module:numgen~NumberGenerator#_state _state}
  * @see {@link module:numgen~NumberGenerator#_value _value}
  * @see {@link module:numgen~NumberGenerator#getFactor getFactor}
  * @see {@link module:numgen~NumberGenerator#getMaxValue getMaxValue}
@@ -678,6 +644,112 @@ NumberGenerator.prototype.getNext = function() {
 };
 
 /**
+ * Return array containing several next items of sequence.
+ *
+ * @param {Integer} nPartSize
+ *      Quantity of next items of sequence that should be included in result.
+ * @return {Array}
+ *      Array containing several next items of sequence.
+ * @method
+ * @see {@link module:numgen~NumberGenerator#getNext getNext}
+ */
+NumberGenerator.prototype.getNextPart = function(nPartSize) {
+    var result = [];
+    while (nPartSize-- > 0) {
+        result.push(this.getNext());
+    }
+    return result;
+};
+
+/**
+ * Create new generator object that is similar to this one but is in initial state.
+ *
+ * @return {Object}
+ *      Reference to the newly created object.
+ * @method
+ * @see {@link module:numgen~NumberGenerator#getFactor getFactor}
+ * @see {@link module:numgen~NumberGenerator#getMaxValue getMaxValue}
+ * @see {@link module:numgen~NumberGenerator#getStartValue getStartValue}
+ * @see {@link module:numgen~NumberGenerator#getValueChange getValueChange}
+ * @see {@link module:numgen~NumberGenerator#getValueChangePeriod getValueChangePeriod}
+ * @see {@link module:numgen~NumberGenerator#getValueSavePeriod getValueSavePeriod}
+ * @see {@link module:numgen~NumberGenerator#isPassToChanger isPassToChanger}
+ * @see {@link module:numgen~NumberGenerator#isResetValueOnMax isResetValueOnMax}
+ */
+NumberGenerator.prototype.clone = function() {
+    return new NumberGenerator({
+        factor: this.getFactor(),
+        maxValue: this.getMaxValue(),
+        passToChanger: this.isPassToChanger(),
+        resetValueOnMax: this.isResetValueOnMax(),
+        startValue: this.getStartValue(),
+        valueChange: this.getValueChange(),
+        valueChangePeriod: this.getValueChangePeriod(),
+        valueSavePeriod: this.getValueSavePeriod()
+    });
+};
+
+/**
+ * Return array containing several consecutive items of sequence 
+ * (subsequence containing items with indexes from <code>nFirstIndex</code> up to <code>nLastIndex</code>).
+ * <br>
+ * Unlike {@link module:numgen~NumberGenerator#getNextPart getNextPart} this method does not change object's state
+ * (i.e. {@link module:numgen~NumberGenerator#_current _current} and {@link module:numgen~NumberGenerator#_index _index}
+ * fields preserve their values).
+ *
+ * @param {Integer} nFirstIndex
+ *      Index of first item that should be included in result.
+ * @param {Integer} nLastIndex
+ *      Index of last item that should be included in result.
+ * @return {Array}
+ *      Subsequence containing items with indexes from <code>nFirstIndex</code> up to <code>nLastIndex</code>.
+ * @method
+ * @see {@link module:numgen~NumberGenerator#clone clone}
+ * @see {@link module:numgen~NumberGenerator#getNext getNext}
+ * @see {@link module:numgen~NumberGenerator#getNextPart getNextPart}
+ */
+NumberGenerator.prototype.getPart = function(nFirstIndex, nLastIndex) {
+    "use strict";
+    var result = [],
+        copy, nIndex;
+    if (nFirstIndex <= nLastIndex) {
+        copy = this.clone();
+        nIndex = 0;
+        while (nIndex < nFirstIndex) {
+            nIndex++;
+            if (nIndex < nFirstIndex) {
+                copy.getNext();
+            }
+        }
+        if (nIndex === 0) {
+            result.push(copy.getCurrent());
+            nIndex++;
+        }
+        while (nIndex++ <= nLastIndex) {
+            result.push(copy.getNext());
+        }
+    }
+    return result;
+};
+
+/**
+ * Convert object into array.
+ * <br>
+ * Essentially this method is the wrap for the following call:
+ * <code>this.getPart(1, nSize);</code>
+ *
+ * @param {Integer} nSize
+ *      Size of array.
+ * @return {Array}
+ *      Subsequence containing items with indexes from 1 up to <code>nSize</code>.
+ * @method
+ * @see {@link module:numgen~NumberGenerator#getPart getPart}
+ */
+NumberGenerator.prototype.toArray = function(nSize) {
+    return this.getPart(1, nSize);
+};
+
+/**
  * Reset parameters of generator to initial values.
  * <br>
  * This method should be called after generator's creation when properties are changed that influence on generator's work.
@@ -686,7 +758,6 @@ NumberGenerator.prototype.getNext = function() {
  * @return {Object}
  *      Reference to <code>this</code> object.
  * @method
- * @author Denis Sikuler
  * @see {@link module:numgen~NumberGenerator#_lastNumberTime _lastNumberTime}
  * @see {@link module:numgen~NumberGenerator#_value _value}
  */
@@ -704,7 +775,7 @@ NumberGenerator.prototype.reset = function() {
  * Free resources that are allocated for object.
  *
  * @method
- * @author Denis Sikuler
+ * @see {@link module:numgen~NumberGenerator#_state _state}
  */
 NumberGenerator.prototype.dispose = function() {
     this._state = null;
@@ -713,7 +784,20 @@ NumberGenerator.prototype.dispose = function() {
 /**
  * Convert object into string.
  *
+ * @return {String}
+ *      String representation of the object.
  * @method
+ * @see {@link module:numgen~NumberGenerator#getCurrent getCurrent}
+ * @see {@link module:numgen~NumberGenerator#getFactor getFactor}
+ * @see {@link module:numgen~NumberGenerator#getIndex getIndex}
+ * @see {@link module:numgen~NumberGenerator#getMaxValue getMaxValue}
+ * @see {@link module:numgen~NumberGenerator#getPrev getPrev}
+ * @see {@link module:numgen~NumberGenerator#getStartValue getStartValue}
+ * @see {@link module:numgen~NumberGenerator#getValue getValue}
+ * @see {@link module:numgen~NumberGenerator#getValueChangePeriod getValueChangePeriod}
+ * @see {@link module:numgen~NumberGenerator#getValueSavePeriod getValueSavePeriod}
+ * @see {@link module:numgen~NumberGenerator#isPassToChanger isPassToChanger}
+ * @see {@link module:numgen~NumberGenerator#isResetValueOnMax isResetValueOnMax}
  */
 NumberGenerator.prototype.toString = function() {
     "use strict";
@@ -725,7 +809,7 @@ NumberGenerator.prototype.toString = function() {
             ", start value - ", this.getStartValue(),
             ", max value - ", this.getMaxValue(),
             ", value change period - ", ((nValue = this.getValueChangePeriod()) < 0 ? "no" : nValue + "ms"),
-            ", value save period - ", ((nValue = this.getValueSavPeriod()) < 0 ? "no" : nValue + "ms"),
+            ", value save period - ", ((nValue = this.getValueSavePeriod()) < 0 ? "no" : nValue + "ms"),
             ", index - ", this.getIndex(),
             ", previous item - ", this.getPrev(),
             ", current item - ", this.getCurrent()

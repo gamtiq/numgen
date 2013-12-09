@@ -1,6 +1,6 @@
 {
   "name": "numgen",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Creates objects that generate number sequences",
   "main": "numgen.js",
   "directories": {
@@ -32,14 +32,16 @@
     "grunt-umd": "~1.3.0",
     "grunt-mocha-cli": "~1.3.0"
   },
-  
   "jam": {
-      "main": "dist/numgen.js",
-      "include": [
-          "doc",
-          "dist",
-          "README.md"
-      ]
+    "main": "dist/numgen.js",
+    "include": [
+      "doc",
+      "dist",
+      "README.md"
+    ]
   },
-  "categories": ["Data", "Utilities"]
+  "categories": [
+    "Data",
+    "Utilities"
+  ]
 }

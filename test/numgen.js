@@ -1,3 +1,6 @@
+/*jshint laxbreak:true*/
+/*global chai, describe, it, window*/
+
 // Tests for numgen component/module
 describe("numgen", function() {
     var nL = 100,
@@ -305,6 +308,103 @@ describe("numgen", function() {
             
             subseq();
             setTimeout(getNext, nPeriod + 1);
+        });
+    });
+    
+    describe("generator's supplementary methods", function() {
+        describe("clone", function() {
+            it("should clone source object", function() {
+                var ng = new NumGen({startValue: 100, valueChange: 2, maxValue: 1000}),
+                    copy;
+                
+                ng.getNext();
+                ng.getNext();
+                
+                copy = ng.clone();
+                copy.getNext();
+                expect(copy.getStartValue())
+                    .equal(ng.getStartValue());
+                expect(copy.getValueChange())
+                    .equal(ng.getValueChange());
+                expect(copy.getMaxValue())
+                    .equal(ng.getMaxValue());
+                
+                expect(copy.getCurrent())
+                    .not.equal(ng.getCurrent());
+                expect(copy.getIndex())
+                    .not.equal(ng.getIndex());
+            });
+        });
+        
+        describe("getNextPart(nPartSize)", function() {
+            it("should return array containing subsequence of specified size", function() {
+                var ng = new NumGen();
+                
+                expect(ng.getNextPart(3))
+                    .deep.equal([1, 2, 3]);
+                expect(ng.getNextPart(4))
+                    .deep.equal([4, 5, 6, 7]);
+                expect(ng.getCurrent())
+                    .equal(7);
+                expect(ng.getIndex())
+                    .equal(7);
+                
+                ng.setValueChange(2)
+                    .reset();
+                
+                expect(ng.getNextPart(5))
+                    .deep.equal([2, 4, 6, 8, 10]);
+                expect(ng.getCurrent())
+                    .equal(10);
+                expect(ng.getIndex())
+                    .equal(5);
+            });
+        });
+        
+        describe("getPart(nFirstIndex, nLastIndex)", function() {
+            it("should return array containing specified slice of sequence without modifying its state", function() {
+                var ng = new NumGen(),
+                    nCurrent, nIndex;
+                
+                ng.getNext();
+                ng.getNext();
+                nCurrent = ng.getCurrent();
+                nIndex = ng.getIndex();
+                
+                expect(ng.getPart(10, 15))
+                    .deep.equal([10, 11, 12, 13, 14, 15]);
+                expect(ng.getCurrent())
+                    .equal(nCurrent);
+                expect(ng.getIndex())
+                    .equal(nIndex);
+                
+                expect(ng.getPart(0, 3))
+                    .deep.equal([0, 1, 2, 3]);
+                expect(ng.getCurrent())
+                    .equal(nCurrent);
+                expect(ng.getIndex())
+                    .equal(nIndex);
+            });
+        });
+        
+        describe("toArray(nSize)", function() {
+            it("should return array containing specified quantity of items from the beginning of sequence", function() {
+                var ng = new NumGen(),
+                nCurrent, nIndex;
+            
+                for (nIndex = 0; nIndex < 10; nIndex++) {
+                    ng.getNext();
+                }
+                nCurrent = ng.getCurrent();
+                nIndex = ng.getIndex();
+                
+                expect(ng.toArray(7))
+                    .deep.equal([1, 2, 3, 4, 5, 6, 7]);
+                expect(ng.getCurrent())
+                    .equal(nCurrent);
+                expect(ng.getIndex())
+                    .equal(nIndex);
+            });
         });
     });
 });

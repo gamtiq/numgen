@@ -1,12 +1,15 @@
 {
   "name": "numgen",
-  "main": ["dist/numgen.js", "dist/numgen.min.js"],
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "description": "Creates objects that generate number sequences",
+  "main": [
+    "dist/numgen.js",
+    "dist/numgen.min.js"
+  ],
   "homepage": "https://github.com/gamtiq/numgen",
   "authors": [
     "Denis Sikuler"
   ],
-  "description": "Creates objects that generate number sequences",
   "keywords": [
     "number",
     "sequence",

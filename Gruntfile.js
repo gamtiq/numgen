@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         src: "<%= name %>.js",
         
         jshint: {
-            files: ["*.js"],
+            files: ["*.js", "test/*.js"],
             
             options: {
                 // Enforcing

@@ -1,18 +1,18 @@
 {
-    "name": "numgen",
-    "repo": "gamtiq/numgen",
-    "description": "Creates objects that generate number sequences",
-    "version": "0.0.2",
-    "keywords": [
-        "number",
-        "sequence",
-        "generator"
-    ],
-    "dependencies": {},
-    "development": {},
-    "license": "MIT",
-    "main": "numgen.js",
-    "scripts": [
-        "numgen.js"
-    ]
+  "name": "numgen",
+  "version": "0.0.3",
+  "description": "Creates objects that generate number sequences",
+  "repo": "gamtiq/numgen",
+  "keywords": [
+    "number",
+    "sequence",
+    "generator"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "numgen.js",
+  "scripts": [
+    "numgen.js"
+  ]
 }

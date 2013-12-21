@@ -1,5 +1,8 @@
 # numgen
 
+[![NPM version](https://badge.fury.io/js/numgen.png)](http://badge.fury.io/js/numgen)
+[![Build Status](https://travis-ci.org/gamtiq/numgen.png)](https://travis-ci.org/gamtiq/numgen)
+
 Creates objects that generate number sequences.
 
 **Disclaimer:** this package does not have anything common with ECMAScript 6 generators nor with `yield` operator.

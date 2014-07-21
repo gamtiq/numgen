@@ -58,7 +58,8 @@ module.exports = function(grunt) {
                 src: "<%= src %>",
                 dest: "<%= dest %>",
                 objectToExport: "NumberGenerator",
-                globalAlias: "NumGen"
+                globalAlias: "NumGen",
+                indent: "    "
             }
         }
         

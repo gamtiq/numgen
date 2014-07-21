@@ -25,13 +25,17 @@ Creates objects that generate number sequences.
 
     bower install numgen
 
+### [SPM](http://spmjs.io)
+
+    spm install numgen
+
 ### AMD, &lt;script&gt;
 
 Use `dist/numgen.js` or `dist/numgen.min.js` (minified version).
 
 ## Usage
 
-### Node, Component
+### Node, Component, SPM
 
 ```js
 var NumGen = require("numgen");

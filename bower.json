@@ -1,6 +1,6 @@
 {
   "name": "numgen",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Creates objects that generate number sequences",
   "main": [
     "dist/numgen.js",

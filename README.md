@@ -13,7 +13,7 @@ Creates objects that generate number sequences.
 
     npm install numgen
 
-### [Component](http://component.io)
+### [Component](https://github.com/componentjs/component)
 
     component install gamtiq/numgen
 

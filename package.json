@@ -1,6 +1,6 @@
 {
   "name": "numgen",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Creates objects that generate number sequences",
   "main": "numgen.js",
   "directories": {
@@ -45,9 +45,6 @@
     "Utilities"
   ],
   "spm": {
-    "main": "numgen.js",
-    "engines": {
-      "seajs": "2.2.1"
-    }
+    "main": "numgen.js"
   }
 }

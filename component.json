@@ -1,6 +1,6 @@
 {
   "name": "numgen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Creates objects that generate number sequences",
   "repository": "gamtiq/numgen",
   "keywords": [

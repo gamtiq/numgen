@@ -1,3 +1,7 @@
+### 0.1.1 / 2015-05-29
+
+* make objects ES6-iterable (implement ECMAScript 6 iteration protocol)
+
 ### 0.1.0 / 2015-01-17
 
 * migration to [Component](https://github.com/componentjs/component) 1.0

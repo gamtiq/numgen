@@ -406,5 +406,34 @@ describe("numgen", function() {
                     .equal(nIndex);
             });
         });
+        
+        if (typeof NumGen.prototype.next === "function") {
+            describe("next()", function() {
+                it("should be iterable", function() {
+                    var ng = new NumGen();
+                    expect( ng[Symbol.iterator] )
+                        .be.a("function");
+                    expect( ng[Symbol.iterator]() )
+                        .equal(ng);
+                });
+                
+                it("should have iterator", function() {
+                    var ng = new NumGen({
+                                            startValue: -1,
+                                            valueChange: 3
+                                        }),
+                        iterator = ng[Symbol.iterator]();
+                
+                    expect(iterator.next())
+                        .eql({done: false, value: 2});
+                    expect(iterator.next())
+                        .eql({done: false, value: 5});
+                    expect(iterator.next())
+                        .eql({done: false, value: 8});
+                    expect(iterator.next())
+                        .eql({done: false, value: 11});
+                });
+            });
+        }
     });
 });

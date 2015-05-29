@@ -27,6 +27,9 @@ module.exports = function(grunt) {
                 undef: true,
                 unused: true,
                 
+                // Relaxing
+                esnext: true,
+                
                 // Environment
                 node: true
             }

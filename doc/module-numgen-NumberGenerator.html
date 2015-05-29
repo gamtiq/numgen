@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>JSDoc: Class: NumberGenerator</title>
-    
+
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
     <!--[if lt IE 9]>
@@ -16,78 +16,82 @@
 <body>
 
 <div id="main">
-    
+
     <h1 class="page-title">Class: NumberGenerator</h1>
+
     
-    
+
 
 
 
 <section>
-    
+
 <header>
-    <h2>
-        <span class="ancestors"><a href="module-numgen.html">numgen</a>~</span>
     
-    NumberGenerator
-    </h2>
+        <h2>
+            <span class="ancestors"><a href="module-numgen.html">numgen</a>~</span>
+        
+        NumberGenerator
+        </h2>
+        
     
-</header>  
+</header>
 
 <article>
     <div class="container-overview">
     
-    
-    
         
-<dt>
-    <h4 class="name" id="NumberGenerator"><span class="type-signature"></span>new NumberGenerator<span class="signature">(<span class="optional">initValue</span>)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Class for objects that generate number sequences.<br>Numbers of sequence are calculated by the following formula:<br><code>f * v</code><br>where <code>f</code> is constant factor (см. <a href="module-numgen-NumberGenerator.html#_factor">_factor</a>), <code>v</code> is variable value that changes depending on generator properties (см. <a href="module-numgen-NumberGenerator.html#_value">_value</a>).
-    </div>
-    
 
     
+
+    <h4 class="name" id="NumberGenerator"><span class="type-signature"></span>new NumberGenerator<span class="signature">(initValue<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
     
+
+
+
+<div class="description">
+    Class for objects that generate number sequences.<br>Numbers of sequence are calculated by the following formula:<br><code>f * v</code><br>where <code>f</code> is constant factor (см. <a href="module-numgen-NumberGenerator.html#_factor">_factor</a>), <code>v</code> is variable value that changes depending on generator properties (см. <a href="module-numgen-NumberGenerator.html#_value">_value</a>).<br>Objects are ES6-iterable.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		<th>Argument</th>
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>initValue</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -96,148 +100,166 @@
 
             
             </td>
-            
+
             
                 <td class="attributes">
                 
                     &lt;optional><br>
                 
-                    
+
                 
-                    
+
                 
                 </td>
             
+
             
-            
-            
+
             <td class="description last">Specifies initial property values. Keys are property names, their values are values of corresponding properties.     The following keys (properties) can be specified:     <table>         <tr>             <th>Name</th>             <th>Type</th>             <th>Description</th>         </tr>         <tr>             <td>factor</td>             <td>Number</td>             <td>Constant factor that is used to calculate numbers of sequence.</td>         </tr>         <tr>             <td>maxValue</td>             <td>Number</td>             <td>Maximal value of variable.</td>         </tr>         <tr>             <td>passToChanger</td>             <td>Boolean</td>             <td>Indicates whether reference to this object should be passed into function that is used to calculate new value of variable.</td>         </tr>         <tr>             <td>resetValueOnMax</td>             <td>Boolean</td>             <td>Indicates whether variable value should be set to initial value when variable reaches maximal value.</td>         </tr>         <tr>             <td>startValue</td>             <td>Number</td>             <td>Initial value of variable.</td>         </tr>         <tr>             <td>valueChange</td>             <td>Number, Function, Object, null, undefined</td>             <td>Specifies the way to calculate new value of variable (see <a href="module-numgen-NumberGenerator.html#_valueChange">_valueChange</a>).</td>         </tr>         <tr>             <td>valueChangePeriod</td>             <td>Integer</td>             <td>Time interval in milliseconds during which it is possible to calculate new value of variable (see <a href="module-numgen-NumberGenerator.html#_valueChangePeriod">_valueChangePeriod</a>).</td>         </tr>         <tr>             <td>valueSavePeriod</td>             <td>Integer</td>             <td>Time interval in milliseconds during which it is possible to change or preserve value of variable (see <a href="module-numgen-NumberGenerator.html#_valueSavePeriod">_valueSavePeriod</a>).</td>         </tr>     </table></td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line69">line 69</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line71">line 71</a>
     </li></ul></dd>
     
+
     
+
     
-    
-    
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    
-    
-</dd>
+
+
+
+
+
+
+
+
+
+
+
+
 
     
     </div>
+
     
+
     
+
     
+
+     
+
     
-    
-    
-    
-    
-    
-    
-    
+
     
         <h3 class="subsection-title">Members</h3>
+
         
-        <dl>
             
-<dt>
-    <h4 class="name" id="_current"><span class="type-signature">&lt;protected> </span>_current<span class="type-signature"> :Number</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        The current item of sequence (the last requested item by <a href="module-numgen-NumberGenerator.html#getNext">getNext</a>).
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_current"><span class="type-signature">(protected) </span>_current<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    The current item of sequence (the last requested item by <a href="module-numgen-NumberGenerator.html#getNext">getNext</a>).
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Number</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line537">line 537</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line539">line 539</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -246,133 +268,149 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_factor"><span class="type-signature">&lt;protected> </span>_factor<span class="type-signature"> :Number</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Constant factor that is used to calculate numbers of sequence.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_factor"><span class="type-signature">(protected) </span>_factor<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Constant factor that is used to calculate numbers of sequence.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Number</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line106">line 106</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line108">line 108</a>
     </li></ul></dd>
     
+
     
+
     
-    
-    
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_index"><span class="type-signature">&lt;protected> </span>_index<span class="type-signature"> :Integer</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        The index of the current item of sequence.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_index"><span class="type-signature">(protected) </span>_index<span class="type-signature"> :Integer</span></h4>
+
+
+
+
+<div class="description">
+    The index of the current item of sequence.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Integer</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line495">line 495</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line497">line 497</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -381,69 +419,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_lastNumberTime"><span class="type-signature">&lt;protected> </span>_lastNumberTime<span class="type-signature"> :Integer</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Time where the last calculated item of sequence was requested (represented in milliseconds from start of epoch).
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_lastNumberTime"><span class="type-signature">(protected) </span>_lastNumberTime<span class="type-signature"> :Integer</span></h4>
+
+
+
+
+<div class="description">
+    Time where the last calculated item of sequence was requested (represented in milliseconds from start of epoch).
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Integer</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line558">line 558</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line560">line 560</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -452,69 +498,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_maxValue"><span class="type-signature">&lt;protected> </span>_maxValue<span class="type-signature"> :Number</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Maximal value of variable.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_maxValue"><span class="type-signature">(protected) </span>_maxValue<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Maximal value of variable.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Number</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line199">line 199</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line201">line 201</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -523,69 +577,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_passToChanger"><span class="type-signature">&lt;protected> </span>_passToChanger<span class="type-signature"> :Boolean</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Indicates whether reference to this object should be passed into function that is used to calculate new value of variable.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_passToChanger"><span class="type-signature">(protected) </span>_passToChanger<span class="type-signature"> :Boolean</span></h4>
+
+
+
+
+<div class="description">
+    Indicates whether reference to this object should be passed into function that is used to calculate new value of variable.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Boolean</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line382">line 382</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line384">line 384</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -598,69 +660,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_prev"><span class="type-signature">&lt;protected> </span>_prev<span class="type-signature"> :Number</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        The previous item of sequence.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_prev"><span class="type-signature">(protected) </span>_prev<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    The previous item of sequence.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Number</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line516">line 516</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line518">line 518</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -669,69 +739,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_resetValueOnMax"><span class="type-signature">&lt;protected> </span>_resetValueOnMax<span class="type-signature"> :Boolean</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Indicates whether variable value should be set to initial value when variable reaches maximal value.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_resetValueOnMax"><span class="type-signature">(protected) </span>_resetValueOnMax<span class="type-signature"> :Boolean</span></h4>
+
+
+
+
+<div class="description">
+    Indicates whether variable value should be set to initial value when variable reaches maximal value.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Boolean</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line236">line 236</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line238">line 238</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -742,69 +820,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_startValue"><span class="type-signature">&lt;protected> </span>_startValue<span class="type-signature"> :Number</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Initial value of variable.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_startValue"><span class="type-signature">(protected) </span>_startValue<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Initial value of variable.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Number</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line163">line 163</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line165">line 165</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -813,69 +899,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_state"><span class="type-signature">&lt;protected> </span>_state<span class="type-signature"> :Object</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Contains any data necessary for generator's work.Can be used by function that calculates value of variable to save intermediate values e.g. several preceding items of sequence.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_state"><span class="type-signature">(protected) </span>_state<span class="type-signature"> :Object</span></h4>
+
+
+
+
+<div class="description">
+    Contains any data necessary for generator's work.Can be used by function that calculates value of variable to save intermediate values e.g. several preceding items of sequence.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Object</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line569">line 569</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line571">line 571</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -886,69 +980,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_value"><span class="type-signature">&lt;protected> </span>_value<span class="type-signature"> :Number</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Variable value that is used to calculate numbers of sequence.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_value"><span class="type-signature">(protected) </span>_value<span class="type-signature"> :Number</span></h4>
+
+
+
+
+<div class="description">
+    Variable value that is used to calculate numbers of sequence.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Number</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line142">line 142</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line144">line 144</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -957,37 +1059,36 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_valueChange"><span class="type-signature">&lt;protected> </span>_valueChange<span class="type-signature"> :Number|Function|Object|null|undefined</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Specifies the way to calculate new value of variable.<br>The following values can be used:<ul><li><code>null</code> or <code>undefined</code> means that variable's value does not change (i.e. variable is constant);<li>a number means that new value is the sum of previous value and the number;<li>a function or an object having <code>execute</code> method means that new value is result of function/method call.</ul>In the latter case the following object is passed as argument into function/method:<table>    <tr>        <th>Field</th>        <th>Type</th>        <th>Description</th>    </tr>    <tr>        <td><code>current</code></td>        <td><code>Number</code></td>        <td>The current item of sequence (i.e. the last item that was returned              by <a href="module-numgen-NumberGenerator.html#getNext">getNext</a> method).</td>    </tr>    <tr>        <td><code>factor</code></td>        <td><code>Number</code></td>        <td>Constant factor that is used to calculate numbers of sequence.</td>    </tr>    <tr>        <td><code>generator</code></td>        <td><code>Object</code></td>        <td>             Reference to <code>this</code> object that represents number generator.             This field is available only when <code>passToChanger</code> property is <code>true</code>             (i.e. when <a href="module-numgen-NumberGenerator.html#isPassToChanger">isPassToChanger</a> returns <code>true</code>).        </td>    </tr>    <tr>        <td><code>index</code></td>        <td><code>Integer</code></td>        <td>The index of sequence's number that is being calculated.</td>    </tr>    <tr>        <td><code>maxValue</code></td>        <td><code>Number</code></td>        <td>Maximal value of variable.</td>    </tr>    <tr>        <td><code>prev</code></td>        <td><code>Number</code></td>        <td>The previous item of sequence (i.e. the result that is returned              by <a href="module-numgen-NumberGenerator.html#getPrev">getPrev</a> method).</td>    </tr>    <tr>        <td><code>startValue</code></td>        <td><code>Number</code></td>        <td>Initial value of variable.</td>    </tr>    <tr>        <td><code>state</code></td>        <td><code>Object</code></td>        <td>             The data that are necessary to generator's work.             The object can be used to save intermediate values (e.g. several preceding items of sequence).        </td>    </tr>    <tr>        <td><code>value</code></td>        <td><code>Number</code></td>        <td>The current value of variable.</td>    </tr></table>
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_valueChange"><span class="type-signature">(protected) </span>_valueChange<span class="type-signature"> :Number|function|Object|null|undefined</span></h4>
+
+
+
+
+<div class="description">
+    Specifies the way to calculate new value of variable.<br>The following values can be used:<ul><li><code>null</code> or <code>undefined</code> means that variable's value does not change (i.e. variable is constant);<li>a number means that new value is the sum of previous value and the number;<li>a function or an object having <code>execute</code> method means that new value is result of function/method call.</ul>In the latter case the following object is passed as argument into function/method:<table>    <tr>        <th>Field</th>        <th>Type</th>        <th>Description</th>    </tr>    <tr>        <td><code>current</code></td>        <td><code>Number</code></td>        <td>The current item of sequence (i.e. the last item that was returned              by <a href="module-numgen-NumberGenerator.html#getNext">getNext</a> method).</td>    </tr>    <tr>        <td><code>factor</code></td>        <td><code>Number</code></td>        <td>Constant factor that is used to calculate numbers of sequence.</td>    </tr>    <tr>        <td><code>generator</code></td>        <td><code>Object</code></td>        <td>             Reference to <code>this</code> object that represents number generator.             This field is available only when <code>passToChanger</code> property is <code>true</code>             (i.e. when <a href="module-numgen-NumberGenerator.html#isPassToChanger">isPassToChanger</a> returns <code>true</code>).        </td>    </tr>    <tr>        <td><code>index</code></td>        <td><code>Integer</code></td>        <td>The index of sequence's number that is being calculated.</td>    </tr>    <tr>        <td><code>maxValue</code></td>        <td><code>Number</code></td>        <td>Maximal value of variable.</td>    </tr>    <tr>        <td><code>prev</code></td>        <td><code>Number</code></td>        <td>The previous item of sequence (i.e. the result that is returned              by <a href="module-numgen-NumberGenerator.html#getPrev">getPrev</a> method).</td>    </tr>    <tr>        <td><code>startValue</code></td>        <td><code>Number</code></td>        <td>Initial value of variable.</td>    </tr>    <tr>        <td><code>state</code></td>        <td><code>Object</code></td>        <td>             The data that are necessary to generator's work.             The object can be used to save intermediate values (e.g. several preceding items of sequence).        </td>    </tr>    <tr>        <td><code>value</code></td>        <td><code>Number</code></td>        <td>The current value of variable.</td>    </tr></table>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Number</span>
 |
 
-<span class="param-type">Function</span>
+<span class="param-type">function</span>
 |
 
 <span class="param-type">Object</span>
@@ -999,39 +1100,48 @@
 <span class="param-type">undefined</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line344">line 344</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line346">line 346</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1046,69 +1156,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_valueChangePeriod"><span class="type-signature">&lt;protected> </span>_valueChangePeriod<span class="type-signature"> :Integer</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Time interval in milliseconds during which it is possible to calculate new value of variable.Negative value indicates that there are no time restrictions for calculation of new value.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_valueChangePeriod"><span class="type-signature">(protected) </span>_valueChangePeriod<span class="type-signature"> :Integer</span></h4>
+
+
+
+
+<div class="description">
+    Time interval in milliseconds during which it is possible to calculate new value of variable.Negative value indicates that there are no time restrictions for calculation of new value.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Integer</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line420">line 420</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line422">line 422</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1119,69 +1237,77 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
+
+
+
+
 
         
             
-<dt>
-    <h4 class="name" id="_valueSavePeriod"><span class="type-signature">&lt;protected> </span>_valueSavePeriod<span class="type-signature"> :Integer</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Time interval in milliseconds during which it is possible to change or preserve value of variable.When the interval ends the variable is reset to initial value.Negative value indicates that reset of variable's value is not used.
-    </div>
-    
-    
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
+<h4 class="name" id="_valueSavePeriod"><span class="type-signature">(protected) </span>_valueSavePeriod<span class="type-signature"> :Integer</span></h4>
+
+
+
+
+<div class="description">
+    Time interval in milliseconds during which it is possible to change or preserve value of variable.When the interval ends the variable is reset to initial value.Negative value indicates that reset of variable's value is not used.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
 <span class="param-type">Integer</span>
 
 
-            </li>
-        </ul>
-    
+        </li>
+    </ul>
 
-    
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line459">line 459</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line461">line 461</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1192,70 +1318,83 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
-</dd>
 
-        </dl>
+
+
+
+
+        
     
-    
+
     
         <h3 class="subsection-title">Methods</h3>
+
         
-        <dl>
             
-<dt>
+
+    
+
     <h4 class="name" id="clone"><span class="type-signature"></span>clone<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Create new generator object that is similar to this one but is in initial state.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Create new generator object that is similar to this one but is in initial state.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line679">line 679</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line681">line 681</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1278,23 +1417,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to the newly created object.
 </div>
@@ -1302,72 +1443,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="dispose"><span class="type-signature"></span>dispose<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Free resources that are allocated for object.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Free resources that are allocated for object.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line780">line 780</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line782">line 782</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1376,74 +1528,87 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    
-    
-</dd>
+
+
+
+
+
+
+
+
+
+
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getCurrent"><span class="type-signature"></span>getCurrent<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return the current item of sequence (the last requested item by <a href="module-numgen-NumberGenerator.html#getNext">getNext</a>).
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return the current item of sequence (the last requested item by <a href="module-numgen-NumberGenerator.html#getNext">getNext</a>).
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line547">line 547</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line549">line 549</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1452,23 +1617,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     The current item of sequence (the last requested item by <a href="module-numgen-NumberGenerator.html#getNext">getNext</a>).
 </div>
@@ -1476,72 +1643,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getFactor"><span class="type-signature"></span>getFactor<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return constant factor that is used to calculate numbers of sequence.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return constant factor that is used to calculate numbers of sequence.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line116">line 116</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line118">line 118</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1550,23 +1728,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Constant factor that is used to calculate numbers of sequence.
 </div>
@@ -1574,72 +1754,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getIndex"><span class="type-signature"></span>getIndex<span class="signature">()</span><span class="type-signature"> &rarr; {Integer}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return the index of the current item of sequence.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return the index of the current item of sequence.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line505">line 505</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line507">line 507</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1648,23 +1839,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     The index of the current item of sequence.
 </div>
@@ -1672,72 +1865,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Integer</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getMaxValue"><span class="type-signature"></span>getMaxValue<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return maximal value of variable.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return maximal value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line209">line 209</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line211">line 211</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1746,23 +1950,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Maximal value of variable.
 </div>
@@ -1770,72 +1976,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getNext"><span class="type-signature"></span>getNext<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return next item of sequence.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return next item of sequence.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line592">line 592</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line594">line 594</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -1870,23 +2087,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Next item of sequence.
 </div>
@@ -1894,70 +2113,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="getNextPart"><span class="type-signature"></span>getNextPart<span class="signature">(nPartSize)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return array containing several next items of sequence.
-    </div>
-    
 
     
+
+    <h4 class="name" id="getNextPart"><span class="type-signature"></span>getNextPart<span class="signature">(nPartSize)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
     
+
+
+
+<div class="description">
+    Return array containing several next items of sequence.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nPartSize</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -1966,48 +2187,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Quantity of next items of sequence that should be included in result.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line656">line 656</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line658">line 658</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2016,23 +2247,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Array containing several next items of sequence.
 </div>
@@ -2040,70 +2273,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Array</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="getPart"><span class="type-signature"></span>getPart<span class="signature">(nFirstIndex, nLastIndex)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return array containing several consecutive items of sequence (subsequence containing items with indexes from <code>nFirstIndex</code> up to <code>nLastIndex</code>).<br>Unlike <a href="module-numgen-NumberGenerator.html#getNextPart">getNextPart</a> this method does not change object's state(i.e. <a href="module-numgen-NumberGenerator.html#_current">_current</a> and <a href="module-numgen-NumberGenerator.html#_index">_index</a>fields preserve their values).
-    </div>
-    
 
     
+
+    <h4 class="name" id="getPart"><span class="type-signature"></span>getPart<span class="signature">(nFirstIndex, nLastIndex)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
     
+
+
+
+<div class="description">
+    Return array containing several consecutive items of sequence (subsequence containing items with indexes from <code>nFirstIndex</code> up to <code>nLastIndex</code>).<br>Unlike <a href="module-numgen-NumberGenerator.html#getNextPart">getNextPart</a> this method does not change object's state(i.e. <a href="module-numgen-NumberGenerator.html#_current">_current</a> and <a href="module-numgen-NumberGenerator.html#_index">_index</a>fields preserve their values).
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nFirstIndex</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -2112,21 +2347,21 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Index of first item that should be included in result.</td>
         </tr>
-	
-	
-	
+
+    
+
         <tr>
             
                 <td class="name"><code>nLastIndex</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -2135,48 +2370,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Index of last item that should be included in result.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line711">line 711</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line713">line 713</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2189,23 +2434,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Subsequence containing items with indexes from <code>nFirstIndex</code> up to <code>nLastIndex</code>.
 </div>
@@ -2213,72 +2460,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Array</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getPrev"><span class="type-signature"></span>getPrev<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return the previous item of sequence.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return the previous item of sequence.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line526">line 526</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line528">line 528</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2287,23 +2545,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     The previous item of sequence.
 </div>
@@ -2311,72 +2571,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getStartValue"><span class="type-signature"></span>getStartValue<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return initial value of variable.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return initial value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line173">line 173</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line175">line 175</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2385,23 +2656,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Initial value of variable.
 </div>
@@ -2409,72 +2682,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getValue"><span class="type-signature"></span>getValue<span class="signature">()</span><span class="type-signature"> &rarr; {Number}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return current variable value.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return current variable value.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line152">line 152</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line154">line 154</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2483,23 +2767,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Current variable value.
 </div>
@@ -2507,72 +2793,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="getValueChange"><span class="type-signature"></span>getValueChange<span class="signature">()</span><span class="type-signature"> &rarr; {Number|Function|Object|null|undefined}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return value that specifies the way to calculate new value of variable.
-    </div>
-    
 
     
+
+    <h4 class="name" id="getValueChange"><span class="type-signature"></span>getValueChange<span class="signature">()</span><span class="type-signature"> &rarr; {Number|function|Object|null|undefined}</span></h4>
+
     
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return value that specifies the way to calculate new value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line354">line 354</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line356">line 356</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2581,23 +2878,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Value that specifies the way to calculate new value of variable.
 </div>
@@ -2605,15 +2904,15 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Number</span>
 |
 
-<span class="param-type">Function</span>
+<span class="param-type">function</span>
 |
 
 <span class="param-type">Object</span>
@@ -2625,64 +2924,75 @@
 <span class="param-type">undefined</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getValueChangePeriod"><span class="type-signature"></span>getValueChangePeriod<span class="signature">()</span><span class="type-signature"> &rarr; {Integer}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return time interval in milliseconds during which it is possible to calculate new value of variable.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return time interval in milliseconds during which it is possible to calculate new value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line430">line 430</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line432">line 432</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2691,23 +3001,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Time interval in milliseconds during which it is possible to calculate new value of variable.
 </div>
@@ -2715,72 +3027,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Integer</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="getValueSavePeriod"><span class="type-signature"></span>getValueSavePeriod<span class="signature">()</span><span class="type-signature"> &rarr; {Integer}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Return time interval in milliseconds during which it is possible to change or preserve value of variable.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Return time interval in milliseconds during which it is possible to change or preserve value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line469">line 469</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line471">line 471</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2789,23 +3112,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Time interval in milliseconds during which it is possible to change or preserve value of variable.
 </div>
@@ -2813,72 +3138,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Integer</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="isPassToChanger"><span class="type-signature"></span>isPassToChanger<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Test whether reference to this object should be passed into function that is used to calculate new value of variable.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Test whether reference to this object should be passed into function that is used to calculate new value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line392">line 392</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line394">line 394</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2887,23 +3223,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     <code>true</code>, if reference to this object should be passed into function, otherwise <code>false</code>.
 </div>
@@ -2911,72 +3249,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Boolean</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="isResetValueOnMax"><span class="type-signature"></span>isResetValueOnMax<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Test whether variable value should be set to initial value when variable reaches maximal value.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Test whether variable value should be set to initial value when variable reaches maximal value.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line246">line 246</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line248">line 248</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -2985,23 +3334,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     <code>true</code>, if variable value will be reset, otherwise <code>false</code>.
 </div>
@@ -3009,72 +3360,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Boolean</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="reset"><span class="type-signature"></span>reset<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Reset parameters of generator to initial values.<br>This method should be called after generator's creation when properties are changed that influence on generator's work.This method shouldn't be called when generator's properties are set by constructor's parameters.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Reset parameters of generator to initial values.<br>This method should be called after generator's creation when properties are changed that influence on generator's work.This method shouldn't be called when generator's properties are set by constructor's parameters.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line764">line 764</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line766">line 766</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -3085,23 +3447,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -3109,70 +3473,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setFactor"><span class="type-signature"></span>setFactor<span class="signature">(nFactor)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Set constant factor that is used to calculate numbers of sequence.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setFactor"><span class="type-signature"></span>setFactor<span class="signature">(nFactor)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Set constant factor that is used to calculate numbers of sequence.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nFactor</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -3181,48 +3547,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Constant factor that is used to calculate numbers of sequence.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line130">line 130</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line132">line 132</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -3231,23 +3607,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -3255,70 +3633,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setMaxValue"><span class="type-signature"></span>setMaxValue<span class="signature">(nValue)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Set maximal value of variable.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setMaxValue"><span class="type-signature"></span>setMaxValue<span class="signature">(nValue)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Set maximal value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nValue</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -3327,48 +3707,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Maximal value of variable.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line223">line 223</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line225">line 225</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -3377,23 +3767,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -3401,70 +3793,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setPassToChanger"><span class="type-signature"></span>setPassToChanger<span class="signature">(bPass)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Change the property that indicates whether reference to this object should be passed into function that is used to calculate new value of variable.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setPassToChanger"><span class="type-signature"></span>setPassToChanger<span class="signature">(bPass)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Change the property that indicates whether reference to this object should be passed into function that is used to calculate new value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>bPass</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -3473,48 +3867,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last"><code>true</code>, if reference to this object should be passed into function, otherwise <code>false</code>.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line406">line 406</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line408">line 408</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -3523,23 +3927,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -3547,70 +3953,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setResetValueOnMax"><span class="type-signature"></span>setResetValueOnMax<span class="signature">(bReset)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Change the property that indicates whether variable value should be set to initial value when variable reaches maximal value.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setResetValueOnMax"><span class="type-signature"></span>setResetValueOnMax<span class="signature">(bReset)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Change the property that indicates whether variable value should be set to initial value when variable reaches maximal value.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>bReset</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -3619,48 +4027,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last"><code>true</code>, if variable value should be reset, otherwise <code>false</code>.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line260">line 260</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line262">line 262</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -3669,23 +4087,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -3693,70 +4113,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setStartValue"><span class="type-signature"></span>setStartValue<span class="signature">(nValue)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Set initial value of variable.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setStartValue"><span class="type-signature"></span>setStartValue<span class="signature">(nValue)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Set initial value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nValue</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -3765,48 +4187,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Initial value of variable.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line187">line 187</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line189">line 189</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -3815,23 +4247,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -3839,77 +4273,79 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setValueChange"><span class="type-signature"></span>setValueChange<span class="signature">(change)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Set the way to calculate new value of variable.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setValueChange"><span class="type-signature"></span>setValueChange<span class="signature">(change)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Set the way to calculate new value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>change</code></td>
             
-            
+
             <td class="type">
             
                 
 <span class="param-type">Number</span>
 |
 
-<span class="param-type">Function</span>
+<span class="param-type">function</span>
 |
 
 <span class="param-type">Object</span>
@@ -3923,48 +4359,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Specifies the way to calculate new value of variable.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line368">line 368</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line370">line 370</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -3973,23 +4419,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -3997,70 +4445,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setValueChangePeriod"><span class="type-signature"></span>setValueChangePeriod<span class="signature">(nPeriod)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Set time interval in milliseconds during which it is possible to calculate new value of variable.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setValueChangePeriod"><span class="type-signature"></span>setValueChangePeriod<span class="signature">(nPeriod)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Set time interval in milliseconds during which it is possible to calculate new value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nPeriod</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -4069,48 +4519,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Time interval in milliseconds during which new value of variable can be calculated.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line444">line 444</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line446">line 446</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -4119,23 +4579,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -4143,70 +4605,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="setValueSavePeriod"><span class="type-signature"></span>setValueSavePeriod<span class="signature">(nPeriod)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Set time interval in milliseconds during which it is possible to change or preserve value of variable.
-    </div>
-    
 
     
+
+    <h4 class="name" id="setValueSavePeriod"><span class="type-signature"></span>setValueSavePeriod<span class="signature">(nPeriod)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
     
+
+
+
+<div class="description">
+    Set time interval in milliseconds during which it is possible to change or preserve value of variable.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nPeriod</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -4215,48 +4679,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Time interval in milliseconds during which value of variable can be changed or preserved.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line483">line 483</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line485">line 485</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -4265,23 +4739,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Reference to <code>this</code> object.
 </div>
@@ -4289,70 +4765,72 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Object</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
-    <h4 class="name" id="toArray"><span class="type-signature"></span>toArray<span class="signature">(nSize)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Convert object into array.<br>Essentially this method is the wrap for the following call:<code>this.getPart(1, nSize);</code>
-    </div>
-    
 
     
+
+    <h4 class="name" id="toArray"><span class="type-signature"></span>toArray<span class="signature">(nSize)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+
     
+
+
+
+<div class="description">
+    Convert object into array.<br>Essentially this method is the wrap for the following call:<code>this.getPart(1, nSize);</code>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
     
-    
-    
-        <h5>Parameters:</h5>
-        
 
 <table class="params">
     <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
         <tr>
             
                 <td class="name"><code>nSize</code></td>
             
-            
+
             <td class="type">
             
                 
@@ -4361,48 +4839,58 @@
 
             
             </td>
+
             
+
             
-            
-            
-            
+
             <td class="description last">Size of array.</td>
         </tr>
-	
-	
-	</tbody>
+
+    
+    </tbody>
 </table>
-    
-    
-    
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line748">line 748</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line750">line 750</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -4411,23 +4899,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     Subsequence containing items with indexes from 1 up to <code>nSize</code>.
 </div>
@@ -4435,72 +4925,83 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">Array</span>
 
 
-	</dd>
+    </dd>
 </dl>
 
-        
     
-    
-</dd>
+
+
 
         
             
-<dt>
+
+    
+
     <h4 class="name" id="toString"><span class="type-signature"></span>toString<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        Convert object into string.
-    </div>
-    
 
     
-    
-    
-    
-    
-    
-    
+
+
+
+<div class="description">
+    Convert object into string.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <dl class="details">
-    
-        
-    
-    
+
     
 
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
+
     
-    
+
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line802">line 802</a>
+        <a href="numgen.js.html">numgen.js</a>, <a href="numgen.js.html#line804">line 804</a>
     </li></ul></dd>
     
+
     
-    
-    
+
     
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
@@ -4529,23 +5030,25 @@
         </ul>
     </dd>
     
-    
+
     
 </dl>
 
-    
-    
 
-    
 
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
     String representation of the object.
 </div>
@@ -4553,31 +5056,30 @@
 
 
 <dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
 <span class="param-type">String</span>
 
 
-	</dd>
+    </dd>
 </dl>
+
+    
+
+
 
         
     
-    
-</dd>
 
-        </dl>
     
-    
-    
-    
+
     
 </article>
 
-</section>  
+</section>
 
 
 
@@ -4585,13 +5087,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Modules</h3><ul><li><a href="module-numgen.html">numgen</a></li></ul><h3>Classes</h3><ul><li><a href="module-numgen-NumberGenerator.html">NumberGenerator</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-numgen.html">numgen</a></li></ul><h3>Classes</h3><ul><li><a href="module-numgen-NumberGenerator.html">NumberGenerator</a></li></ul>
 </nav>
 
-<br clear="both">
+<br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.0</a> on Mon Jul 21 2014 22:44:03 GMT+0400 (MSK)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0</a> on Fri May 29 2015 23:38:21 GMT+0300 (RTZ 2 (зима))
 </footer>
 
 <script> prettyPrint(); </script>

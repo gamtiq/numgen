@@ -28,6 +28,8 @@
      * where 
      * <code>f</code> is constant factor (см. {@link module:numgen~NumberGenerator#_factor _factor}), 
      * <code>v</code> is variable value that changes depending on generator properties (см. {@link module:numgen~NumberGenerator#_value _value}).
+     * <br>
+     * Objects are ES6-iterable.
      * 
      * @param {Object} [initValue]
      *      Specifies initial property values. Keys are property names, their values are values of corresponding properties.
@@ -830,6 +832,19 @@
                 ", current item - ", this.getCurrent()
                 ].join("");
     };
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+        NumberGenerator.prototype[Symbol.iterator] = function() {
+            return this;
+        };
+        
+        NumberGenerator.prototype.next = function() {
+            return {
+                done: false,
+                value: this.getNext()
+            };
+        };
+    }
 
     //Exports
 
